@@ -1,0 +1,182 @@
+/* 
+Dark Green #003734 
+Med Green #227872
+Teal #306e66
+Lt Teal #54948c
+Lt Grey #c4cbd3
+Dk Grey #8d9097
+Lt Pink #f0dde6
+Dk Pink #e0bbce
+*/
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1% 5%;
+}
+/* section {
+    border: 1px solid grey;
+} */
+
+body,
+html {
+    border: none;
+    overflow-x: hidden;
+}
+
+html { display: block; }
+
+/* Typography */
+
+a {
+    text-decoration: none; 
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+/* Utility Classes & Universal Styles */
+
+.left    { text-align: left; }
+.center  { text-align: center; }
+.right   { text-align: right; }
+
+.padded { padding: 5%; }
+.padded-sm { padding: 1rem; }
+.padded-md { padding: 3%; }
+.padded-lg { padding: 10%; }
+
+.padding-0 { padding: 0; }
+.padded-2 { padding: 2rem; }
+
+.padding-r { padding-right: 10%; }
+.padding-l { padding-left: 10%; }
+.padding-t { padding-top: 5%; }
+.padding-b { padding-bottom: 5%; }
+
+.padding-l-sm { padding-left: 4%; }
+.padding-t-sm { padding-top: 3%; }
+
+.margin {
+    margin: 4%;
+}
+.margin-top { margin-top: 3%; }
+.mb-sm { margin-bottom: 1.5%; }
+.margin-bottom { margin-bottom: 3%; }
+.margin-right { margin-right: 3%; }
+.margin-left { margin-left: 3%; }
+
+.tall-10 { min-height: 10vh; }
+.tall-20 { min-height: 20vh; }
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+.highlight { 
+    background-color: rgb(240,240,245);
+    display: inline-block;
+    padding: 2rem; 
+    margin: 2px;
+}
+
+.white-text { color: white; }
+
+.bg-featured    { background-color: #003734; }
+.bg-dark-grey   { background-color: #8d9097 ;}
+.bg-light-grey  { background-color: #c4cbd3; }
+
+/* Images & Background Images */
+
+.bg-image {
+    background-color: white;
+    background-size: cover; 
+    min-height: 10rem;
+}
+
+.landscape { padding-bottom: 65%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+
+
+.rounded {
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+}
+
+.rounded-2 {
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+}
+
+.banner {
+    background-image: url('/images/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+
+.fixed {
+    background-attachment: fixed;
+}
+
+.bg-philippines { 
+    background-image: url('/images/entalula-island.jpg');
+    background-position: center; 
+}
+
+.bg-ocean {
+    background-image: url('/images/ocean.jpg');
+    background-position: center;
+}
+
+/* Hover Containers for Images */
+
+.hover-container {
+    background-size: cover;
+    background-position: center;
+}
+
+.hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    color: rgb(255,255,255,0);
+    transition: all 0.3s;
+}
+
+.hover-overlay:hover {
+    background-color: rgb(60,60,60,0.7);
+    color: white;
+}
+
+.hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.flex-flip {
+    flex-direction: row-reverse;
+}
+
+/* Icon */
+
+.big-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
