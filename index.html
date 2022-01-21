@@ -14,100 +14,136 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-------- Adobe Fonts --------->
+    <link rel="stylesheet" href="https://use.typekit.net/mtv5bbw.css">
+
+    <!-------- Google Fonts --------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
     <!-------- External CSS stylesheet ------->
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
     <!------ Header and Nav Bar ------->
-    <header class="grid-spaceAround bg-featured white-text">
+    <header class="grid-middle-right">
+        <div class="col-4-middle logo">
+            <a href="/index.html">
+                <h1>Marisa NeSmith</h1>
+            </a>
+        </div>
+        <nav class="col-8-middle right mobile-hide">     
+            <a href="#">About</a>
+            <a href="#">Photography</a>
+            <a href="#">Contact</a>
+            <a href="#">Work With Me</a>
+        </nav>
+     
+    </header>
+
+    <!------ Header and Nav Bar ------->
+    <!-- <header class="grid-spaceAround bg-featured white-text">
         <nav class="col-3-middle right">
             <a class="white-text" href="#">Photography</a>
             <a class="white-text" href="#">Packages</a>
         </nav>
-        <h1 class="col-3-middle center">Marisa NeSmith Photography</h1>
+        <h1 class="col-3-middle center logo">Marisa NeSmith Photography</h1>
         <nav class="col-3-middle">
             <a class="white-text" href="#">About</a>
             <a class="white-text" href="#">Contact</a>
         </nav>
-    </header>
+    </header> -->
 
     <!--------- Banner Section ---------->
     <section class="grid-center padded banner fixed">
         <div class="col-5_sm-12-middle center highlight padded-2">
-            <h2> Creative Photography</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dignissimos eum voluptatum ipsam dolor esse laborum reprehenderit. Veniam corrupti ut natus possimus! Eius totam animi dolores et enim libero magnam.</p>
+            <h2 class="mb-2"> Creative Photography</h2>
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dignissimos eum voluptatum ipsam dolor esse laborum reprehenderit. Veniam corrupti ut natus possimus! Eius totam animi dolores et enim libero magnam.</p>
             <a href="#" class="button">Portfolio</a>
             <a href="#" class="button">Contact Me</a>
         </div>
+        <svg class="svg-white" viewBox="0 0 100 5">
+            <polygon points="0,0 50,5 100,0 100,5 0,5"></polygon>
+        </svg>
     </section>
 
     <!------ About Me Section --------->
     <section class="padded">
-        <div class="grid padded flex-flip">
-            <div class="col-5_sm-12 tall-50 bg-image bg-ocean"></div>
-            <div class="col-7_sm-12-middle padded">
-                <h4 class="subtitle-heading">Let's Adventure Together</h4>
-                <h3>Hello, I'm Marisa</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi dolorem, dolorum reprehenderit magnam eius fugit hic animi praesentium voluptate possimus, nihil doloribus? Illo at sequi laudantium vero omnis numquam!</p>
+        <div class="grid-spaceBetween tall-50 flex-flip">
+            <div class="col-3_sm-12 bg-image bg-ocean"></div>
+            <div class="col-3_sm-12 bg-image bg-ocean"></div>
+            <div class="col-5_sm-12 padded-sm">
+                <!-- <h4 class="subtitle-heading">Let's Adventure Together</h4> -->
+                <h3 class="mb-2">Hello, I'm Marisa</h3>
+                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In excepturi dolorem, dolorum reprehenderit magnam eius fugit hic animi praesentium voluptate possimus, nihil doloribus? Illo at sequi laudantium vero omnis numquam!</p>
                 <a class="button" href="#">Read More</a>
             </div>
         </div>
     </section>
 
     <!------------ MY SERVICES ----------->
-    <section class="padded center bg-dark-grey">
-        <h2>Photography Services</h2>
+    <section class="padded center bg-linen">
+        <h2 class="padded-sm">Photography Services</h2>
         <div class="grid padded-sm">
             <div class="col-4_sm-12 padded-sm">
                 <i class="fas fa-camera big-icon"></i>
-                <h4>Short Heading</h4>
+                <h4 class="mb-2">Short Heading</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis error quisquam deserunt cupiditate? Atque quia alias, nobis voluptatibus, odio eius velit dicta, unde voluptas ad non expedita omnis reiciendis?</p>
             </div>
             <div class="col-4_sm-12 padded-sm">
             <i class="fas fa-camera big-icon"></i>
-            <h4>Short Heading</h4>
+            <h4 class="mb-2">Short Heading</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis error quisquam deserunt cupiditate? Atque quia alias, nobis voluptatibus, odio eius velit dicta, unde voluptas ad non expedita omnis reiciendis?</p>
         </div>
         <div class="col-4_sm-12 padded-sm">
             <i class="fas fa-camera big-icon"></i>
-            <h4>Short Heading</h4>
+            <h4 class="mb-2">Short Heading</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis error quisquam deserunt cupiditate? Atque quia alias, nobis voluptatibus, odio eius velit dicta, unde voluptas ad non expedita omnis reiciendis?</p>
         </div>
         </div>
     </section>
 
     <!---------- Circle Images -------->
-    <section class="padded center bg-light-grey">
-        <h2>Explore Photography Portfolios</h2>
-        <div class="grid padded-sm">
-            <div class="col-4_sm-12 padded-sm">
-                <div class="hover-container rounded" style="background-image:url('./images/entalula-island.jpg')">
-                    <div class="hover-overlay rounded">
+    <section class="padded center">
+        <h2 class="mb">Portfolios</h2>
+        <div class="grid">
+            <div class="col-4_sm-12">
+                <div class="hover-container tall-70" style="background-image:url('./images/entalula-island.jpg')">
+                    <div class="hover-overlay tall-70">
                         <div class="hover-inner">
-                            <h3>Travel Photography</h3>
+                            <h3 class="white-text">Travel Photography</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4_sm-12 padded-sm">
-                <div class="hover-container rounded" style="background-image:url('./images/entalula-island.jpg')">
-                <div class="hover-overlay rounded">
+            <div class="col-4_sm-12">
+                <div class="hover-container tall-70" style="background-image:url('./images/entalula-island.jpg')">
+                <div class="hover-overlay tall-70">
                     <div class="hover-inner">
-                        <h3>Hotel Photography</h3>
+                        <h3 class="white-text">Hotel Photography</h3>
                     </div>
                 </div>
             </div>
             </div>
-            <div class="col-4_sm-12 padded-sm">
-                <div class="hover-container rounded" style="background-image:url('./images/entalula-island.jpg')">
-                <div class="hover-overlay rounded">
+            <div class="col-4_sm-12">
+                <div class="hover-container tall-70" style="background-image:url('./images/entalula-island.jpg')">
+                <div class="hover-overlay tall-70">
                     <div class="hover-inner">
-                        <h3>Brand Photography</h3>
+                        <h3 class="white-text">Brand Photography</h3>
                     </div>
                 </div>
             </div>
             </div>
+        </div>
+    </section>
+
+     <!---------- Text Section ----------->
+     <section class="grid-center padded bg-linen">
+        <div class="col-12 center">
+            <h2 class="mb-2">Add Some Text Here</h2>
+            <p class="padding-r padding-l">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora reiciendis consequatur nobis quidem sapiente harum doloribus. Ullam facilis vero iure nemo? Debitis earum possimus, quod distinctio id est natus.</p>
         </div>
     </section>
 
@@ -130,13 +166,7 @@
         </div>
     </section>
 
-    <!---------- Text Section ----------->
-    <section class="grid-center padded">
-        <div class="col-12 center">
-            <h2 class="margin-bottom">Add Some Text Here</h2>
-            <p class="padding-r padding-l">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tempora reiciendis consequatur nobis quidem sapiente harum doloribus. Ullam facilis vero iure nemo? Debitis earum possimus, quod distinctio id est natus.</p>
-        </div>
-    </section>
+
 
  
     
