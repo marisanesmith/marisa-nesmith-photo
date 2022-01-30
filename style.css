@@ -138,6 +138,10 @@ svg:not(:root) {
     border: 4px solid white;
 }
 
+.linen-border {
+    border: 4px solid #ede8e3;
+}
+
 .button {
     border: 2px solid #5e616b;
     padding: 0.6rem 2rem;
@@ -175,6 +179,14 @@ svg:not(:root) {
 .padding-l-sm { padding-left: 4%; }
 .padding-t-sm { padding-top: 3%; }
 
+.featured-padded { 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    opacity: 1;
+}
+
 .margin {
     margin: 4%;
 }
@@ -202,6 +214,7 @@ svg:not(:root) {
     display: inline-block;
     padding: 2rem; 
     margin: 2px;
+    opacity: 90%;
 }
 
 .white-text { 
@@ -221,6 +234,9 @@ svg:not(:root) {
 .bg-slate       { background-color: #292c33; }
 
 /* Images & Background Images */
+
+.box-shadow { box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
+
 
 .bg-image {
     background-color: white;
@@ -246,7 +262,7 @@ svg:not(:root) {
 }
 
 .banner {
-    background-image: url('/images/ocean.jpg');
+    background-image: url('/images/morocco.jpg');
     background-size: cover;
     background-position: center;
     min-height: 90vh;
@@ -265,6 +281,46 @@ svg:not(:root) {
 .bg-ocean {
     background-image: url('/images/ocean.jpg');
     background-position: center;
+}
+
+.bg-morocco { 
+    background-image: url('/images/morocco.jpg');
+    background-position: center; 
+}
+
+.bg-elephant { 
+    background-image: url('/images/tanzania-elephant.jpg');
+    background-position: center; 
+}
+
+.bg-lighthouse { 
+    background-image: url('/images/maine-lighthouse.jpg');
+    background-position: center; 
+}
+
+.bg-mandalay { 
+    background-image: url('/images/mandalay.jpg');
+    background-position: center; 
+}
+
+.bg-rice-terrace { 
+    background-image: url('/images/bali-rice-terraces.jpg');
+    background-position: center; 
+}
+
+.bg-manarola { 
+    background-image: url('/images/manarola.jpg');
+    background-position: center; 
+}
+
+.bg-komodo { 
+    background-image: url('/images/komodo-islands.jpg');
+    background-position: center; 
+}
+
+.bg-el-nido { 
+    background-image: url('/images/el-nido-philippines.jpg');
+    background-position: center; 
 }
 
 .bg-marisa-portrait-2 { 
@@ -356,4 +412,58 @@ svg:not(:root) {
 .big-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+/* Contact Form Styles */
+  
+form input, 
+form textarea {
+  width: 50%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  /* border: 2px solid rgb(220,220,220); */
+  font-family: 'Crimson';
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #ede8e3;;
+  border-bottom: 2px solid #003734 ;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #292c33;
+}
+
+textarea {
+  min-height: 0.5rem;
+}
+
+form label {
+  margin-top: 1rem;
+  display: block;
+  color: #ede8e3;;
+  font-weight: bold;
+}
+
+form button {
+  background-color: #003734 ;
+  opacity: 80%;
+  font-family: 'Crimson';
+  color: white;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0;
+  /* font-weight: 400; */
+  font-size: 0.7rem;
+}
+
+form button:hover {
+  background-color: #ede8e3;;
+  color: #292c33;
+  border: 2px solid #227872;
+  cursor: pointer;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marisa NeSmith</title>
+
+    <!-------- Grid stylesheet --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+    <!-------- Font Awesome stylesheet ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------- Adobe Fonts --------->
+    <link rel="stylesheet" href="https://use.typekit.net/mtv5bbw.css">
+
+    <!-------- Google Fonts --------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!------- Animate on Scroll CSS -------> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-------- External CSS stylesheet ------->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+    <!------ Header and Nav Bar ------->
+    <header class="grid-middle-right">
+        <div class="col-4-middle logo">
+            <a href="/index.html">
+                <h1>Marisa NeSmith</h1>
+            </a>
+        </div>
+        <nav class="col-8-middle right mobile-hide">     
+            <!-- <a href="#">About</a> -->
+            <a href="#">Photography</a>
+            <a href="#">About</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!------- CONTACT FORM INPUT BOX --------->
+  <section class="grid bg-linen padded">
+    <div class="col-12-middle center">
+      <h2 class="xl-text">Get in Touch.</h2>
+    </div>
+    <form class="col-12 form-style-two center" action="https://formspree.io/f/xknyjonr"
+    method="POST">
+      <label for="_name"></label>
+      <input type="text" placeholder="Your Name" name="_name" id="_name" />
+      <label for="_replyto"></label>
+      <input type="email" placeholder="Your Email" name="_replyto" id="_replyto" />
+      <label for="message"></label>
+      <textarea name="message" id="message" placeholder="Tell us about your business and brand"></textarea>
+      <textarea class="margin-bottom" name="message" id="message" placeholder="What services are you looking for and how can we help."></textarea>
+      <br>
+      <button type="submit" class="button">send message</button>
+    </form>
+  </section>
+
+  <!----- IMAGES -------->
+
+  <section class="grid-center padded tall-80" data-aos="fade-in">
+      <div class="col-4_md-12 border bg-image bg-manarola"></div>
+      <div class="col-4_md-12 border bg-image bg-mandalay"></div>
+      <div class="col-4_md-12 border bg-image bg-lighthouse"></div>
+  </section>
+
+    <!-------- FOOTER ---------->
+
+    <footer class="grid bg-slate linen-text padded">
+        <div class="col-12-middle center">
+            <a href="index.html">
+                <h2 class="linen-text">Marisa NeSmith</h2>
+            </a>
+            <div class="col-12-middle">
+                <!-- <hr class="center"> -->
+                <nav>
+                    <!-- <a class="linen-text" href="#">About</a>// -->
+                    <a class="linen-text" href="#">Photography</a>//
+                    <a class="linen-text" href="#">Contact</a>//
+                    <a class="linen-text" href="#">Work with me</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!--------- COPYRIGHT --------->
+    <section class="grid bg-linen padded-sm">
+        <div class="col-12-middle center">
+            <h5>copyright marisa nesmith photography © 2022</h5>
+        </div>
+    </section>
+
+    <!---- Animate on Scroll JS ------>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <!------ Animate on Scroll details ------>
+    <script>
+        AOS.init({
+        offset: 150, // offset (in px) from the original trigger point
+        delay: 10, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+    });
+    
+    </script>
+    </body>
+</html>
